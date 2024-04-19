@@ -5,7 +5,7 @@ import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import Inventory from './components/Inventory/InventoryList';
 import StockCounting from './components/StockCounting/StockCounting';
-import OrderManagement from './components/OrderManagement/OrderManagement';
+import OrderList from './components/OrderManagement/OrderList'; // Updated line
 import Reporting from './components/Reporting/Reporting';
 import Settings from './components/Settings/Settings';
 import Forecasting from './components/Forecasting/Forecasting';

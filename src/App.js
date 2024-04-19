@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
-import Inventory from './components/Inventory/Inventory';
+import Inventory from './components/Inventory/InventoryList';
 import StockCounting from './components/StockCounting/StockCounting';
 import OrderManagement from './components/OrderManagement/OrderManagement';
 import Reporting from './components/Reporting/Reporting';

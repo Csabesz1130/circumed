@@ -1,0 +1,13 @@
+/* OrderManagement.css */
+.OrderManagement {
+    padding: 20px;
+  }
+  
+  .order-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-list li {
+    margin-bottom: 10px;
+  }

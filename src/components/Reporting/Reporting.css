@@ -1,0 +1,13 @@
+/* Reporting.css */
+.Reporting {
+    padding: 20px;
+  }
+  
+  .report-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .report-list li {
+    margin-bottom: 10px;
+  }

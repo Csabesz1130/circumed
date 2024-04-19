@@ -1,0 +1,60 @@
+/* Dashboard.css */
+.Dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .stat-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    width: 30%;
+  }
+
+  .ai-forecasting {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .forecasting-graph {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .forecasting-graph img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .forecasting-insights {
+    margin-top: 20px;
+  }
+  
+  .forecasting-insights h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .forecasting-insights ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .btn-forecast {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }

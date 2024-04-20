@@ -54,32 +54,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
-            <li>
-              <Link to="/order-management">Order Management</Link>
-            </li>
-            <li>
-              <Link to="/reporting">Reporting</Link>
-            </li>
-            <li>
-              <Link to="/settings">Settings</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/inventory" component={Inventory} />
-          <Route path="/stock-counting" component={StockCounting} />
-          <Route path="/forecasting" component={Forecasting} />
-          <Route path="/order-management" component={OrderManagement} />
-          <Route path="/reporting" component={ReportingList} />
-          <Route path="/settings" component={Settings} />
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-
-export default App;

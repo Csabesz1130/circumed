@@ -6,7 +6,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Inventory from './components/Inventory/InventoryList';
 import StockCounting from './components/StockCounting/StockCounting';
 import OrderList from './components/OrderManagement/OrderList'; // Updated line
-import Reporting from './components/Reporting/Reporting';
+import ReportingList from './components/Reporting/ReportingList'; // Updated line
 import Settings from './components/Settings/Settings';
 import Forecasting from './components/Forecasting/Forecasting';
 
@@ -47,7 +47,7 @@ function App() {
           <Route path="/stock-counting" component={StockCounting} />
           <Route path="/forecasting" component={Forecasting} />
           <Route path="/order-management" component={OrderManagement} />
-          <Route path="/reporting" component={Reporting} />
+          <Route path="/reporting" component={ReportingList} />
           <Route path="/settings" component={Settings} />
         </Switch>
       </div>

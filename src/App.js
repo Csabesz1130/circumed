@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import Inventory from './components/Inventory/InventoryList';
@@ -11,35 +11,32 @@ import Settings from './components/Settings/Settings';
 import Forecasting from './components/Forecasting/Forecasting';
 
 function App() {
+  // Use the useNavigate hook to get the navigate function
+  const navigate = useNavigate();
+
+  // Function to handle back navigation
+  const goBack = () => {
+    navigate(-1); // Navigate back to the last page
+  };
+
   return (
     <Router>
       <div className="App">
         <nav className="navbar">
           <div className="logo">CircuMed</div>
           <ul className="nav-links">
-            <li>
-              <Link to="/">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="/inventory">Inventory</Link>
-            </li>
-            <li>
-              <Link to="/stock-counting">Stock Counting</Link>
-            </li>
-            <li>
-              <Link to="/forecasting">Forecasting</Link>
-            </li>
-            <li>
-              <Link to="/order-management">Order Management</Link>
-            </li>
-            <li>
-              <Link to="/reporting">Reporting</Link>
-            </li>
-            <li>
-              <Link to="/settings">Settings</Link>
-            </li>
+            <li><Link to="/">Dashboard</Link></li>
+            <li><Link to="/inventory">Inventory</Link></li>
+            <li><Link to="/stock-counting">Stock Counting</Link></li>
+            <li><Link to="/forecasting">Forecasting</Link></li>
+            <li><Link to="/order-management">Order Management</Link></li>
+            <li><Link to="/reporting">Reporting</Link></li>
+            <li><Link to="/settings">Settings</Link></li>
           </ul>
         </nav>
+        
+        {/* Back Button */}
+        <button onClick={goBack} className="back-button">Go Back</button>
 
         <Routes>
           <Route path="/" element={<Dashboard />} />

@@ -6,7 +6,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Inventory from './components/Inventory/InventoryList';
 import StockCounting from './components/StockCounting/StockCounting';
 import OrderList from './components/OrderManagement/OrderList'; // Updated line
-import ReportingList from './components/Reporting/ReportingList'; // Updated line
+import ReportList from './components/Reporting/ReportList'; // Updated line
 import Settings from './components/Settings/Settings';
 import Forecasting from './components/Forecasting/Forecasting';
 

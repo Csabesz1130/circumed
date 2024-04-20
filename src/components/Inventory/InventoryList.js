@@ -1,18 +1,20 @@
-// components/Inventory/InventoryList.js
+// src/components/Inventory/InventoryList.js
 import React from 'react';
-import './Inventory.css';
+import inventoryData from '../../data/inventoryData';
 
-function InventoryList() {
+const InventoryList = () => {
   return (
-    <div className="InventoryList">
+    <div>
       <h2>Inventory List</h2>
       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+        {inventoryData.map(item => (
+          <li key={item.id}>
+            <strong>{item.name}</strong> ({item.type}) - {item.description} [Quantity: {item.quantity}]
+          </li>
+        ))}
       </ul>
     </div>
   );
-}
+};
 
 export default InventoryList;
